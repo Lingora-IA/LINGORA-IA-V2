@@ -9,3 +9,8 @@
 
 # This publishes the frontend only. FastAPI must run on a Python host.
 # Configure /api routing only after the backend's public URL is available.
+[[redirects]]
+  from = "/api/*"
+  to = "https://lingora-api.onrender.com/api/:splat"
+  status = 200
+  force = true
